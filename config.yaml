@@ -1,0 +1,13 @@
+name: alt-L10N
+id:   AltL10N
+key:  altl10n
+version: 0.1
+author_link: https://alfasado.net/
+author_name: Alfasado Inc.
+l10n_class: AltL10N::L10N
+description: <__trans phrase="Specify Alternative Lexicon.">
+callbacks:
+    MT::App::CMS::pre_run:
+        handler: $altl10n::AltL10N::Plugin::_pre_run
+        priority: 1
+
